@@ -170,18 +170,13 @@
 </div>
 
   <script>
-    window.addEventListener("scroll", function () {
-        let bar = document.getElementById("movingBar");
-        let scrollValue = window.scrollY;
-        let windowHeight = window.innerHeight;
-        let section = document.querySelector(".scroll-section");
-        let sectionTop = section.offsetTop;
+    function openOverlay() {
+    document.getElementById("imageOverlay").style.display = "flex";
+}
 
-        if (scrollValue + windowHeight > sectionTop) {
-            let moveAmount = Math.min((scrollValue + windowHeight - sectionTop) / 3, 150);
-            bar.style.transform = `translateY(-${moveAmount}px)`;
-        }
-    });
+function closeOverlay() {
+    document.getElementById("imageOverlay").style.display = "none";
+}
 </script>
 </body>
 </html>
