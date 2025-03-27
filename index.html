@@ -12,10 +12,15 @@
             margin: 0;
             padding: 0;
         }
-        .header-img, .footer-img {
-            width: 100%;
-            max-height: 300px;
+        .profile-section {
+            padding: 20px;
+        }
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
             object-fit: cover;
+            border: 4px solid #333;
         }
         .youtube-link {
             margin: 20px 0;
@@ -38,10 +43,9 @@
 </head>
 <body>
 
-    <img class="header-img" src="your-image.jpg" alt="Your Picture">
-
-    <!-- Profile Picture -->
-    <img src="profile.jpg" alt="Your Profile Picture" width="150" height="150" style="border-radius: 50%; display: block; margin: 20px auto;">
+    <div class="profile-section">
+        <img src="profile.jpg" alt="Your Profile Picture" class="profile-img">
+    </div>
 
     <h1>Welcome to My Portfolio</h1>
     <p>Check out my work and subscribe to my YouTube channel!</p>
@@ -64,15 +68,13 @@
     
     <h2>My Graphic Designs</h2>
     <div class="gallery">
-        <img src="./design1.jpg" alt="Design 1">
-        <img src="./design2.jpg" alt="Design 2">
-        <img src="./design3.jpg" alt="Design 3">
-        <img src="./design4.jpg" alt="Design 4">
-        <img src="./design6.jpg" alt="Design 6">
+        <img src="design1.jpg" alt="Design 1">
+        <img src="design2.jpg" alt="Design 2">
+        <img src="design3.jpg" alt="Design 3">
+        <img src="design4.jpg" alt="Design 4">
+        <img src="design6.jpg" alt="Design 6">
         <img src="design7.jpg" alt="Design 7">
     </div>
-    
-    <img class="footer-img" src="your-image.jpg" alt="Your Picture">
 
 </body>
 </html>
