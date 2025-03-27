@@ -125,19 +125,20 @@
         </div>
     </div>
 
-    <script>
-        window.addEventListener("scroll", function () {
-            let bar = document.getElementById("movingBar");
-            let scrollValue = window.scrollY;
-            let windowHeight = window.innerHeight;
-            let scrollTrigger = document.querySelector('.scroll-section').offsetTop;
+   <script>
+    window.addEventListener("scroll", function () {
+        let bar = document.getElementById("movingBar");
+        let scrollValue = window.scrollY;
+        let windowHeight = window.innerHeight;
+        let section = document.querySelector(".scroll-section");
+        let sectionTop = section.offsetTop;
 
-            if (scrollValue + windowHeight > scrollTrigger) {
-                let moveAmount = Math.min((scrollValue + windowHeight - scrollTrigger) / 2, 150);
-                bar.style.transform = `translateY(-${moveAmount}px)`;
-            }
-        });
-    </script>
+        if (scrollValue + windowHeight > sectionTop) {
+            let moveAmount = Math.min((scrollValue + windowHeight - sectionTop) / 3, 150);
+            bar.style.transform = `translateY(-${moveAmount}px)`;
+        }
+    });
+</script>
 
 </body>
 </html>
