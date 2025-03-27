@@ -42,7 +42,7 @@
         /* Scroll Section */
         .scroll-section {
             position: relative;
-            height: 100vh;
+            height: 120vh; /* Increased height */
             background-color: white;
             display: flex;
             align-items: center;
@@ -52,7 +52,7 @@
         }
         .moving-bar {
             position: absolute;
-            bottom: -100px;
+            bottom: -150px;
             left: 0;
             width: 100%;
             height: 150px;
@@ -62,10 +62,10 @@
             justify-content: center;
             transition: transform 0.3s ease-out;
         }
-        .moving-graphic {
-            width: 80px; /* Adjust size */
-            height: auto;
-            margin-right: 15px;
+        /* More graphics section */
+        .more-graphics {
+            padding: 20px;
+            background-color: #fff;
         }
     </style>
 </head>
@@ -107,18 +107,35 @@
     <!-- Scrolling Effect Section -->
     <div class="scroll-section">
         <div class="moving-bar" id="movingBar">
-            <img src="your-image.png" alt="Graphic" class="moving-graphic">
             <p>Dynamic Scroll Effect</p>
         </div>
         Scrolling Effect Section
+    </div>
+
+    <!-- More Graphics Section -->
+    <div class="more-graphics">
+        <h2>More of My Work</h2>
+        <div class="gallery">
+            <img src="image1.jpg" alt="More Design 1">
+            <img src="image2.jpg" alt="More Design 2">
+            <img src="image3.jpg" alt="More Design 3">
+            <img src="image4.jpg" alt="More Design 4">
+            <img src="image5.jpg" alt="More Design 5">
+            <img src="image6.jpg" alt="More Design 6">
+        </div>
     </div>
 
     <script>
         window.addEventListener("scroll", function () {
             let bar = document.getElementById("movingBar");
             let scrollValue = window.scrollY;
-            let moveAmount = Math.min(scrollValue / 2, 100); // Adjust movement speed
-            bar.style.transform = `translateY(-${moveAmount}px)`;
+            let windowHeight = window.innerHeight;
+            let scrollTrigger = document.querySelector('.scroll-section').offsetTop;
+
+            if (scrollValue + windowHeight > scrollTrigger) {
+                let moveAmount = Math.min((scrollValue + windowHeight - scrollTrigger) / 2, 150);
+                bar.style.transform = `translateY(-${moveAmount}px)`;
+            }
         });
     </script>
 
