@@ -55,12 +55,29 @@
             border-radius: 10px;
             box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
         }
-        .more-graphics {
+        .golden-section {
+            background: linear-gradient(45deg, #d4af37, #ffcc00);
             padding: 20px;
-            background-color: #eaeaea;
+            text-align: center;
+            border-radius: 10px;
+            margin: 20px auto;
+            max-width: 800px;
         }
-        .more-graphics h2 {
-            margin-bottom: 20px;
+        .golden-section h2 {
+            font-family: 'Oswald', sans-serif;
+            font-size: 36px;
+            color: white;
+            margin-bottom: 10px;
+        }
+        .portfolio-button {
+            font-size: 20px;
+            font-weight: bold;
+            color: white;
+            background: #b8860b;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            display: inline-block;
         }
     </style>
 </head>
@@ -82,44 +99,22 @@
             Visit My YouTube Channel
         </a>
     </div>
-    <!-- Graphic Design Portfolio Section -->
-<div style="
-    background: linear-gradient(45deg, #ff7e5f, #feb47b);
-    padding: 20px;
-    text-align: center;
-    border-radius: 10px;
-    margin: 20px auto;
-    max-width: 800px;
-">
-    <h2 style="
-        font-family: 'Oswald', sans-serif;
-        font-size: 36px;
-        color: white;
-        margin-bottom: 10px;
-    ">
-        My Organized Graphic Design Portfolio
-    </h2>
     
-    <!-- Graphic Icon -->
-    <img src="graphic-icon.png" alt="Graphic Design Icon" 
-         style="width: 100px; display: block; margin: 0 auto 15px;">
-    
-    <!-- Google Drive Portfolio Link -->
-    <a href="https://drive.google.com/drive/folders/1Rp_avQn5og19gSeY-EG7lmP_FGlT8Y-t?usp=drive_link" 
-       target="_blank" 
-       style="
-           font-size: 20px;
-           font-weight: bold;
-           color: white;
-           background: #ff5733;
-           padding: 10px 20px;
-           border-radius: 5px;
-           text-decoration: none;
-           display: inline-block;
-       ">
-        📂 View My Portfolio
-    </a>
-</div>
+    <!-- Updated Graphic Design Portfolio Section -->
+    <div class="golden-section">
+        <h2>My Organized Graphic Design Portfolio</h2>
+        
+        <!-- New Cartoonized Image -->
+        <img src="cartoon-family.png" alt="Cartoon Family Icon" 
+             style="width: 150px; display: block; margin: 0 auto 15px;">
+        
+        <!-- Google Drive Portfolio Link -->
+        <a href="https://drive.google.com/drive/folders/1Rp_avQn5og19gSeY-EG7lmP_FGlT8Y-t?usp=drive_link" 
+           target="_blank" class="portfolio-button">
+            📂 View My Portfolio
+        </a>
+    </div>
+
     <h2>My Graphic Designs</h2>
     <div class="gallery">
         <img src="design1.jpg" alt="Design 1">
@@ -129,25 +124,5 @@
         <img src="design6.jpg" alt="Design 6">
         <img src="design7.jpg" alt="Design 7">
     </div>
-   <!-- More Graphics Section -->
-<div class="more-graphics">
-    <h2>More of My Work</h2>
-    <div class="gallery">
-        <img src="image1.jpg" alt="More Design 1">
-        <img src="image2.jpg" alt="More Design 2">
-        <img src="image3.jpg" alt="More Design 3">
-        <img src="image4.jpg" alt="More Design 4">
-        <img src="image5.jpg" alt="More Design 5">
-        <img src="image6.jpg" alt="More Design 6">
-    </div>
-    
-    <!-- Link to Google Drive Portfolio -->
-    <p>
-        <a href="https://drive.google.com/drive/folders/1Rp_avQn5og19gSeY-EG7lmP_FGlT8Y-t?usp=drive_link" 
-           target="_blank" style="font-size: 20px; font-weight: bold; color: #0073e6;">
-            My Organized Graphic Design Portfolio
-        </a>
-    </p>
-</div>
 </body>
 </html>
