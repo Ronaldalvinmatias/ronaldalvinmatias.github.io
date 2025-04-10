@@ -11,33 +11,26 @@
             min-height: 100vh;
             font-family: Arial, sans-serif;
             text-align: center;
-            background-color: #1a1a1a;
-            color: #fff;
-            position: relative;
-            overflow: hidden;
+            background-color: #f4f4f4;
         }
         .profile-section {
             padding: 20px;
-            position: relative;
-            z-index: 2;
         }
         .profile-img {
             width: 150px;
             height: 150px;
             border-radius: 50%;
             object-fit: cover;
-            border: 4px solid #c4a77d;
+            border: 4px solid #333;
         }
         .youtube-section {
             margin-top: 20px;
-            position: relative;
-            z-index: 2;
         }
         .youtube-logo {
             width: 150px;
             cursor: pointer;
         }
-        .youtube-button, .portfolio-button, .reels-button {
+        .youtube-button {
             display: inline-block;
             background-color: #FF0000;
             color: white;
@@ -48,61 +41,47 @@
             text-decoration: none;
             margin-top: 10px;
         }
-        .golden-section, .silver-section {
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
             padding: 20px;
-            text-align: center;
-            border-radius: 10px;
-            margin: 20px auto;
-            position: relative;
-            z-index: 2;
         }
-        .golden-section {
-            background: linear-gradient(45deg, #4e3629, #8b5e3c);
-            width:1200px; /* Set to a smaller width like the YouTube button */
-        }
-        .silver-section {
-            background: silver (45deg, #4e3629, #8b5e3c);
-            color: white;
-        }
-        .golden-section h2, .silver-section h2 {
-            font-family: 'Oswald', sans-serif;
-            font-size: 36px;
-        }
-        .gallery-background {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: 1;
-            overflow: hidden;
-            pointer-events: none;
-        }
-        .gallery-background img {
-            position: absolute;
+        .gallery img {
             width: 200px;
             height: 200px;
             object-fit: cover;
             border-radius: 10px;
-            opacity: 0.3;
-            box-shadow: 2px 2px 10px rgba(255, 255, 255, 0.2);
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+        }
+        .golden-section {
+            background: linear-gradient(45deg, #d4af37, #ffcc00);
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px;
+            margin: 20px auto;
+            max-width: 800px;
+        }
+        .golden-section h2 {
+            font-family: 'Oswald', sans-serif;
+            font-size: 36px;
+            color: white;
+            margin-bottom: 10px;
+        }
+        .portfolio-button {
+            font-size: 20px;
+            font-weight: bold;
+            color: white;
+            background: #b8860b;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            display: inline-block;
         }
     </style>
 </head>
 <body>
-    <div class="gallery-background">
-        <img src="design1.jpg" style="top: 10%; left: 5%; transform: rotate(-15deg);">
-        <img src="design2.jpg" style="top: 30%; left: 70%; transform: rotate(10deg);">
-        <img src="design3.jpg" style="top: 50%; left: 20%; transform: rotate(-5deg);">
-        <img src="design4.jpg" style="top: 70%; left: 50%; transform: rotate(15deg);">
-        <img src="design6.jpg" style="top: 20%; left: 40%; transform: rotate(-10deg);">
-        <img src="design7.jpg" style="top: 80%; left: 80%; transform: rotate(5deg);">
-        <img src="image1.jpg" style="top: 15%; left: 25%; transform: rotate(12deg);">
-        <img src="image2.jpg" style="top: 60%; left: 10%; transform: rotate(-8deg);">
-        <img src="image3.jpg" style="top: 40%; left: 80%; transform: rotate(18deg);">
-        <img src="image4.jpg" style="top: 85%; left: 30%; transform: rotate(-12deg);">
-    </div>
-
     <div class="profile-section">
         <img src="profile.jpg" alt="Profile Picture" class="profile-img">
     </div>
@@ -121,20 +100,30 @@
         </a>
     </div>
     
+    <!-- Updated Graphic Design Portfolio Section -->
     <div class="golden-section">
         <h2>My Organized Graphic Design Portfolio</h2>
-        <a href="https://drive.google.com/drive/folders/1Rp_avQn5og19gSeY-EG7lmP_FGlT8Y-t?usp=drive_link" 
-           target="_blank" class="portfolio-button">
-            📂 View My Portfolio
+        
+        <!-- New Cartoonized Image -->
+        <img src="cartoon-family.png" alt="Cartoon Family Icon" 
+             style="width: 150px; display: block; margin: 0 auto 15px;">
+        
+<!-- Google Drive Portfolio Link with Folder Icon -->
+<a href="https://drive.google.com/drive/folders/1Rp_avQn5og19gSeY-EG7lmP_FGlT8Y-t?usp=drive_link" 
+   target="_blank" class="portfolio-button">
+
+    📂 View My Portfolio
         </a>
     </div>
 
-    <div class="silver-section">
-        <h2>More of My Edited Videos - Reels</h2>
-        <a href="https://drive.google.com/drive/folders/1x7qGkak1nsR6CD555TFo1h1EaZvTR1VK" 
-           target="_blank" class="reels-button">
-            🎬 View My Reels
-        </a>
+    <h2>My Graphic Designs</h2>
+    <div class="gallery">
+        <img src="design1.jpg" alt="Design 1">
+        <img src="design2.jpg" alt="Design 2">
+        <img src="design3.jpg" alt="Design 3">
+        <img src="design4.jpg" alt="Design 4">
+        <img src="design6.jpg" alt="Design 6">
+        <img src="design7.jpg" alt="Design 7">
     </div>
 </body>
 </html>
